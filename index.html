@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>คำถาม</h1>
+        <h2 id="score">คะแนน: 0</h2>
+        <div class="quiz">
+            <h2 id="question1">1. PIM ย่อมาจากอะไร ?</h2>
+            <div>
+                <button class="button" onclick="checkAnswer('a', 1)" id="answer1a">a. พีไอเอ็ม</button>
+                <button class="button" onclick="checkAnswer('b', 1)" id="answer1b">b. พิ้ม</button>
+                <button class="button" onclick="checkAnswer('c', 1)" id="answer1c">c. พิม</button>
+                <button class="button" onclick="checkAnswer('d', 1)" id="answer1d">d. ภีม</button>
+            </div>
+            <br/>
+            <h2 id="result1"></h2>
+        </div>
+        <hr/>
+        <div class="quiz">
+            <h2 id="question2">2. หน่วยงาน GoSoft เป็นบริษัทในเครือของบริษัทใด ?</h2>
+            <div>
+                <button class="button" onclick="checkAnswer('a', 2)" id="answer2a">a. Apple</button>
+                <button class="button" onclick="checkAnswer('b', 2)" id="answer2b">b. CP ALL</button>
+                <button class="button" onclick="checkAnswer('c', 2)" id="answer2c">c. Microsoft</button>
+                <button class="button" onclick="checkAnswer('d', 2)" id="answer2d">d. LINE</button>
+            </div>
+            <br/>
+            <h2 id="result2"></h2>
+        </div>
+        <hr/>
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
